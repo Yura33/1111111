@@ -5,16 +5,16 @@
 
 * {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     border: 1px solid black;
 }
 
 .header {
-    position: relative;
+    /*position: fixed;
+    background-color: white;*/
     width: 1260px;
-    height: 106px;
-    margin: 0 auto;
-    margin-top: 5px;
+    height: 122px;
+    padding-top: 3px;
 }
 
 .logo {
@@ -27,39 +27,37 @@
 .span1 {
     float: left;
     width: 200px;
+    padding-top: 12px;
+    font-weight: bold;
 }
 
 .orange {
     position: relative;
     font-size: 35px;
-    top: 0px;
     color: orange;
-    left: 60px;
+    left: 54px;
 }
 
 .rabbit {
-    display: block;
-    font-size: 35px;
+    font-size: 37px;
     position: relative;
-    left: 57px;
+    left: 51px;
     font-family: myFont;
     color: rgb(71, 71, 71)
 }
 
 .top-menu {
-    float: left;
-    margin-left: 451px;
+    float: right;
+    padding-top: 11px;
 }
 
 .home, .about, .work, .blog, .contact {
-    position: relative;
-    top: 10px;
     float: left;
-    font-size: 20px;
+    font-size: 23px;
     height: 47px;
     width: 55px;
     text-align: center;
-    margin: 0 23px;
+    margin-right: 75px;
 }
 
 a {
@@ -69,19 +67,26 @@ a {
 }
 /*end_header*/
 
-.slider {
-    height: 410px;
-    width: 1620;
+.border_slider {
+    /*margin-top: 122px;
+    overflow-x: visible;*/
     background-image: url(/img/slider.jpg);
+    background-position-x: center;
+}
+
+.slider {
+    left: 50%;
+    height: 410px;
+    width: 1260px;
 }
 
 .span2 {
     width: 410px;
     position: relative;
     top: 150px;
-    left: 50px;
+    left: -425px;
     font-family: myFont;
-    font-size: 35px;
+    font-size: 38px;
     font-weight: bold;
 }
 
@@ -89,7 +94,7 @@ a {
     position: relative;
     color: orange;
     left: 5px;
-    padding: 15px;
+    padding: 9px 15px;
     padding-left: 30px;
     background-color: rgb(71, 71, 71);
 }
@@ -98,8 +103,8 @@ a {
     position: relative;
     color: rgb(71, 71, 71);
     background-color: rgb(233, 162, 30); 
-    top: 55px;
-    padding: 18px;
+    top: 40px;
+    padding: 15px 18px;
     padding-left: 30px;
 }
 /*end_slider*/
@@ -110,17 +115,16 @@ a {
 }
 
 .content1 {
-    margin-top: 10px;
+    padding-top: 28px;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-evenly; 
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold; 
 }
 
 .item1, .item2, .item3, .item4 {
-    padding-left: 23px;
-    width: 23%;
+    width: 24%;
 }
 
 .item5, .item6, .item7, .item8 {
@@ -132,18 +136,18 @@ a {
 /*end content1*/
 
 .content2 {
-    margin-top: 10px; 
+    padding-top: 40px; 
 }
 
 .span5 {
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     text-decoration: underline;
     color: orange;
 }
 
 .card {
     display: flex;
-    margin-top: 10px;
+    padding-top: 35px;
     justify-content: space-around;
 }

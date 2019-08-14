@@ -87,6 +87,7 @@ a {
     overflow-x: visible;*/
     background-image: url(/img/slider.jpg);
     background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .slider {
@@ -205,6 +206,10 @@ table {
     width: 100%;
 }
 
+.row1 {
+    padding-left: 30px;
+    width: 130px;
+}
 /*end forms*/
 
 .footer {

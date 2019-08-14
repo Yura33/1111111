@@ -164,6 +164,14 @@ a {
 .content3 {
   padding-top: 35px; }
 
+form {
+  font-size: 25px;
+  color: orange; }
+
+table {
+  border-collapse: collapse;
+  width: 100%; }
+
 /*end forms*/
 .footer {
   color: white;

@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: Lapture;
-    src: url(/fonts/17530.ttf);
+    font-family: Thin;
+    src: url(/fonts/StMarie-Thin.ttf);
 }
 
 @font-face {
@@ -21,7 +21,6 @@
 * {
     padding: 0;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .header {
@@ -50,20 +49,20 @@
     position: relative;
     font-size: 35px;
     color: orange;
-    left: 54px;
+    left: 59px;
 }
 
 .rabbit {
     font-size: 37px;
     position: relative;
-    left: 51px;
+    left: 55px;
     font-family: myFont;
     color: rgb(71, 71, 71)
 }
 
 .top-menu {
     float: right;
-    padding-top: 11px;
+    padding-top: 14px;
 }
 
 .home, .about, .work, .blog, .contact {
@@ -99,8 +98,8 @@ a {
 .span2 {
     width: 410px;
     position: relative;
-    top: 150px;
-    left: -425px;
+    top: 144px;
+    right: 425px;
     font-family: myFont;
     font-size: 38px;
     font-weight: bold;
@@ -110,8 +109,8 @@ a {
     position: relative;
     color: orange;
     left: 5px;
-    padding: 9px 15px;
-    padding-left: 30px;
+    bottom: 3px;;
+    padding: 9px 15px 9px 30px;
     background-color: rgb(71, 71, 71);
 }
 
@@ -119,9 +118,8 @@ a {
     position: relative;
     color: rgb(71, 71, 71);
     background-color: rgb(233, 162, 30); 
-    top: 40px;
-    padding: 15px 18px;
-    padding-left: 30px;
+    top: 43px;
+    padding: 11px 20px 15px 32px;
 }
 /*end_slider*/
 
@@ -132,24 +130,23 @@ a {
 }
 
 .content1 {
-    padding-top: 23px;
+    padding: 28px 57px 0px 8px;
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-evenly; 
     font-size: 14px;
     font-weight: bold; 
-    line-height: 158%;
+    line-height: 165%;
 }
 
 .item1, .item2, .item3, .item4 {
-    width: 24%;
+    width: 25%;
     
 }
 
 .item5, .item6, .item7, .item8 {
     text-align: right;
     color: orange;
-    width: 16%;
+    width: 17%;
 } 
 /*end content1*/
 
@@ -162,12 +159,12 @@ a {
     font-size: 45px;
     text-decoration: underline;
     color: orange;
-    font-family: Lapture; 
+    font-family: Thin; 
 }
 
 .card {
     display: flex;
-    padding-top: 31px;
+    padding-top: 37px;
     justify-content: space-between;
 }
 
@@ -181,7 +178,7 @@ a {
 }
 
 .img_card {
-    padding: 19px 0;
+    padding: 22px 0;
 }
 
 .text {
@@ -193,23 +190,54 @@ a {
 /*end content2*/
 
 .content3 {
-    padding-top: 35px;
+    padding-top: 39px;
 }
 
 form {
     font-size: 25px;
     color: orange;
+    padding-top: 25px;
 }
 
 table {
-    border-collapse: collapse;
+    border-spacing: 0px 36px;
     width: 100%;
 }
 
-.row1 {
-    padding-left: 30px;
-    width: 130px;
+input[type=text], input[type=email] {    
+    height: 30px;
+    width: 1064px;  
+    background-color: #f8f7f6;
+    border: 2px solid #d2d0cf;
+    border-left: 5px solid #d2d0cf; 
+    font-size: 25px;    
 }
+.message {
+    vertical-align: text-top;
+}
+
+textarea {
+    font-size: 25px;
+    height: 85px;
+    width: 1064px;  
+    background-color: #f8f7f6;
+    border: 2px solid #d2d0cf;
+    border-left: 5px solid #d2d0cf;
+}
+
+input[type=submit] {
+    font-size: 35px;
+    height: 48px;
+    width: 177px;
+    color: white;
+    background: orange;
+    font-family: Thin;
+}
+
+.submit {
+    padding-left: 860px;
+}
+
 /*end forms*/
 
 .footer {
@@ -217,7 +245,7 @@ table {
     background-color: orange;
     font-size: 35px;
     height: 60px;
-    font-family: Memorandum;
+    font-family: Thin;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 12px;
 }

@@ -1,6 +1,12 @@
+@font-face {
+    font-family: myFont;
+    src: url(/fonts/4536.ttf);
+}
+
 * {
     margin: 0 auto;
     padding: 0;
+    border: 1px solid black;
 }
 
 .img_bread {
@@ -12,4 +18,36 @@
 .header {
     height: 70px;
     width: 1260px;
+    color: white;
+    letter-spacing: 7px;
+}
+
+.log {
+    float: left;
+    font-family: myFont;
+    font-size: 32px;
+}
+
+.top-menu {
+   display: inline-block;
+   position: relative;
+   width: 800px;  
+   left: 90px;
+   top: 30px;
+   font-size: 12px;
+}
+
+.top-menu .a {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.s_networks {
+    float: right;
 }

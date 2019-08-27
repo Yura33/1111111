@@ -4,9 +4,9 @@
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .img_bread {
@@ -16,6 +16,7 @@
 }
 
 .header {
+    margin: 0 auto;
     height: 70px;
     width: 1260px;
     color: white;
@@ -29,18 +30,13 @@
 }
 
 .top-menu {
-   display: inline-block;
+   display: flex;
+   justify-content: space-around;
    position: relative;
    width: 800px;  
    left: 90px;
-   top: 30px;
+   top: 43px;
    font-size: 12px;
-}
-
-.top-menu .a {
-    display: inline-block;
-    float: left;
-    padding: 10px;
 }
 
 a {
@@ -50,4 +46,5 @@ a {
 
 .s_networks {
     float: right;
+    
 }

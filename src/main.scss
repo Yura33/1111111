@@ -10,11 +10,12 @@
 
 .header_nav {
     height: 130px;
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background: black;
+    background: rgb(19, 18, 18);
+    align-items: center;
 }
 
 .header_nav a {
@@ -22,14 +23,65 @@
     color: white;
 }
 
+.header_nav a:hover {
+    border-bottom: 5px solid red;
+}
+
 .item {
-    margin-right: 50px;
-    font-size: 20px;
-    font-family: myFont1;   
+    margin-right: 55px;
+    font-size: 17px;
+    font-family: myFont1;  
 }
 
 .item:last-child {
     margin-right: 0;
 }
+// end header
 
+.slider {
+    position: relative;
+    width: 1920px;
+    height: 622px;
+    margin: 0 auto;
+    background: url(/img/slider.jpg);   
+}
 
+.colored_squares {
+    position: absolute;
+    top: 25px;
+    left: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 242px;
+    height: 242px;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+}
+
+.black {
+    background-color: black;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.blue {
+    background-color: rgba(29, 117, 158, 86.801);
+}
+
+.light_blue {
+    background-color: rgb(91, 169, 233);
+}
+
+.red {
+    background-color: rgba(199, 1, 1, 0.87);
+}
+
+.light_red {
+    background-color: rgb(247, 35, 28);
+}

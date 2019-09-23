@@ -12,7 +12,7 @@
         <div class="nav auto">
             <div class="item"><a href="#part1">Портфолио</a></div>
             <div class="item"><a href="#part2">Услуги</a></div>
-            <div class="item"><img src="img/logo.png"></div>
+            <div class="item"><img src="img/log.png"></div>
             <div class="item"><a href="#part3">Отзывы</a></div>
             <div class="item"><a href="#part4">Контакты</a></div>
         </div>
@@ -123,16 +123,34 @@
             <div class="box_contacts">
                 <div class="address">
                     <h3>Наш офис</h3>
-                    <p class="text_contacts">246028, г.Гомель, ул.Головацкого 51
-Факс: 8(029)605 56 92
-MTC: 8(029)288 11 11
+                    <p class="text_contacts">246028, г. Гомель, ул. Головацкого 51
+Факс: 8(029) 605 56 92
+MTC: 8(029) 288 11 11
                     </p>
                     <h3>Контактные номера</h3>
-                    <p class="text_contacts">MTC:8(029)588 11 11
-A1:8(044)588 11 55 
+                    <p class="text_contacts">MTC: 8(029) 588 11 11
+A1: 8(044) 588 11 55 
                     </p>
                 </div>
-                <div class="form"></div>
+                <div class="form_wrapper">
+                    <p>Напишите нам и мы обязательно с Вами свяжемся.</p>
+                    <form method="get">
+                        <div class="form_left">
+                            <label for="first_name">Имя*</label>
+                            <input type="text" id="first_name" name="first_name">
+                            <label for="phone">Телефон*</label>
+                            <input type="tel" id="phone" name="phone">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form_right">
+                            <label for="content">Сообщение*</label>
+                            <textarea name="message" id="content" cols="30" rows="4"></textarea>
+                            <p>* &ndash; Поля обязательны для заполнения.</p>
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

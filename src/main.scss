@@ -15,7 +15,7 @@
 
 * {
     box-sizing: border-box;
-    outline: 1px solid #928d8d;
+    // outline: 1px solid #928d8d;
     margin: 0;
     padding: 0;
 }
@@ -36,7 +36,6 @@
 
 .nav {
     padding-top: 20px;
-    box-sizing: border-box;
     height: 130px;
     display: flex;
     justify-content: center;
@@ -45,16 +44,16 @@
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: #fdfdfd;
 }
 
 .nav a:hover {
-    border-bottom: 6px solid red;
+    border-bottom: 6px solid rgb(255, 0, 0);
     transition: 0.2s;
 }
 
 .item {
-    margin-right: 50px;
+    margin-right: 2.45vw;
     font-size: 17px;
     font-family: Font1;  
 }
@@ -68,31 +67,30 @@
     position: relative;
     height: 622px;
     padding: 100px 0;
-    box-sizing: border-box;
     background: url(/img/slider.jpg);   
 }
 
 .colored_squares {
     position: absolute;
-    top: 25px;
-    left: 73px;
+    top: 1.2vw;
+    left: 3vw;
     display: flex;
     flex-wrap: wrap;
-    width: 242px;
+    width: 12vw;
 }
 
 .color {
-    width: 100px;
-    height: 100px;
-    margin: 8px;
+    width: 5vw;
+    height: 5vw;
+    margin: 6px;
 }
 
 .black {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .gray {
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
 }
 
 .blue {
@@ -179,25 +177,30 @@
 
 .submenu a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .submenu a:hover {
-    border-bottom: 6px solid red; 
+    border-bottom: 6px solid rgb(255, 0, 0); 
     transition: 0.15s;
 }
 
 .img {
-    padding-top: 28px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .img_portfolio {
+    margin-top: 28px;
+    margin-left: 42px;
     height: 200px;
     width: 200px;
-    border: 1px solid gray;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.img_portfolio:first-child {
+    margin-left: 0;
 }
 
 .siding1 {
@@ -231,7 +234,7 @@
 
 .open:hover {
     background: #d83030;
-    color: white;
+    color: #fdfdfd;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
@@ -244,9 +247,15 @@
 }
 
 .img_service {
+    margin-top: 28px;
+    margin-left: 30px;
     height: 270px;
     width: 270px;
-    border: 1px solid gray;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.img_service:first-child {
+    margin-left: 0;
 }
 
 .gr_design1 {
@@ -269,7 +278,7 @@
 
 .comments {
     background: rgb(56, 55, 55);
-    color: white;
+    color: #fdfdfd;
 }
 
 .wrapper_comment {
@@ -300,7 +309,8 @@ h6 {
 }
 
 .text_comments {
-    padding: 17px 400px 0 0;
+    max-width: 565px;
+    padding-top: 17px;
     font-family: Font3;
     font-size: 15px;
     line-height: 23px;
@@ -315,13 +325,17 @@ h6 {
 .next a {
     height: 23px;
     width: 23px;
-    background: gray;
+    background: rgb(128, 128, 128);
     margin-right: 11px;
-    color: white;
+    color: #fdfdfd;
     text-decoration: none;
     text-align: center;
-    line-height: 12px;
-    font-size: 44px;
+    line-height: 14px;
+    font-size: 41px;
+}
+
+.next a:hover {
+    background-color: rgb(110, 105, 105);
 }
 
 // end comments
@@ -331,8 +345,8 @@ h6 {
 }
 
 .box_contacts {
-    padding: 31px 0 42px 0;
-    color: white;
+    padding-bottom: 42px;
+    color: #fdfdfd;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -344,12 +358,12 @@ h6 {
     padding: 30px 30px 20px 40px;
     font-family: Font2;
     background: #b51717;
-    box-sizing: border-box;
     letter-spacing: 1px;
+    margin-top: 31px;
 }
 
 .contacts h2 {
-    color: white;
+    color: #fdfdfd;
 }
 
 h3 {
@@ -366,6 +380,7 @@ h3 {
 
 .form_wrapper {
     width: 670px;
+    margin-top: 31px;
 }
 
 form {
@@ -428,8 +443,8 @@ input[type=submit] {
     padding: 9px 13px;
     font-size: 17px;
     border: 3px solid #d83030;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: #fdfdfd;
 }
 
 input[type=submit]:hover {
@@ -440,7 +455,7 @@ input[type=submit]:hover {
 
 .map {
     padding: 6px 5px 2px;
-    background: white;
+    background: #fdfdfd;
 }
 
 // end contacts
@@ -451,6 +466,33 @@ input[type=submit]:hover {
 
 .text_footer {
     padding: 24px 0;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Font3;
+}
+
+@media screen and (max-width: 1640px) {
+    .colored_squares {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .colored_squares {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .img_portfolio:last-child {
+        margin-right: 42px;
+    }
+    .img_service:last-child {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .box_contacts {
+        justify-content: center;
+    }
 }
